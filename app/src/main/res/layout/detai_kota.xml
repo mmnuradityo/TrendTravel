@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:paddingLeft="16dp"
+    android:onClick="KotaKota"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:id="@+id/FrameDetaiKota">
+    <TextView
+        android:layout_gravity="center|start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textColor="@color/colorTextPrimary"
+        android:text="Kota-Kota"
+        android:id="@+id/textDetailKota"/>
+
+</FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#a9a9a9"
+        android:visibility="visible"
+        android:layout_below="@+id/FrameDetaiKota" />
+</RelativeLayout>

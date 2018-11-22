@@ -1,0 +1,225 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.project_n.tourandtravelproject.fragment.MulaiTourFragment">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/Rencana"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:text="Rencanakan Perjalanan anda sendiri"
+                android:textSize="16sp" />
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_below="@+id/Rencana"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="3dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#ffffff">
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:onClick="mtKotaAsal"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="30dp"
+                                android:text="Dari"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/ic_place"
+                                android:drawablePadding="6dp"
+                                android:gravity="bottom"
+                                android:id="@+id/mtAsalKota"
+                                android:text="Kota Asal"
+                                android:textAlignment="gravity"
+                                android:textColor="@color/colorTextPrimary"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+                        <View
+                            android:layout_gravity="bottom"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginBottom="0dp"
+                            android:background="#8c8c8c"
+                            android:visibility="visible"/>
+
+                    </FrameLayout>
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="mtJumlahOrang"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="30dp"
+                                android:text="Jumlah Tamu"
+                                android:textSize="12sp" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:drawableLeft="@drawable/ic_group"
+                                    android:drawablePadding="6dp"
+                                    android:gravity="bottom"
+                                    android:text="Jumlah "
+                                    android:textAlignment="gravity"
+                                    android:textColor="@color/colorTextPrimary"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:drawablePadding="6dp"
+                                    android:gravity="bottom"
+                                    android:text="Orang"
+                                    android:textAlignment="gravity"
+                                    android:textColor="@color/colorTextPrimary"
+                                    android:textSize="18sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <View
+                            android:layout_gravity="bottom"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginBottom="0dp"
+                            android:background="#8c8c8c"
+                            android:visibility="visible"/>
+                    </FrameLayout>
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="mtTujuan"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="30dp"
+                                android:text="Tujuan Destinasi"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/ic_add_location"
+                                android:drawablePadding="6dp"
+                                android:gravity="bottom"
+                                android:text="Tujuan Destinasi"
+                                android:textAlignment="gravity"
+                                android:textColor="@color/colorTextPrimary"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+                        <View
+                            android:layout_gravity="bottom"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginBottom="0dp"
+                            android:background="#8c8c8c"
+                            android:visibility="visible"/>
+
+                    </FrameLayout>
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="mtListWisata"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="30dp"
+                                android:text="List Wisata"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/ic_terrain"
+                                android:drawablePadding="6dp"
+                                android:gravity="bottom"
+                                android:text="List Wisata"
+                                android:textAlignment="gravity"
+                                android:textColor="@color/colorTextPrimary"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mulai Tour"
+                android:id="@+id/BtnMulaiTour"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/colorTextWhite"
+                android:background="@drawable/roundedcorner"
+                android:layout_margin="14dp"/>
+        </RelativeLayout>
+</FrameLayout>

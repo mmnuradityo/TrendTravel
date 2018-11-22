@@ -1,0 +1,57 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "b54f60ac43de465e61f482a07db76ab9",
+    "entities": [
+      {
+        "tableName": "TravelUser",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `KotaAsal` TEXT, `KotaTujuan` TEXT, `TujuanDestinasi` TEXT, `ListWisata` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "KotaAsal",
+            "columnName": "KotaAsal",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "KotaTujuan",
+            "columnName": "KotaTujuan",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "TujuanDestinasi",
+            "columnName": "TujuanDestinasi",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "ListWisata",
+            "columnName": "ListWisata",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"b54f60ac43de465e61f482a07db76ab9\")"
+    ]
+  }
+}
